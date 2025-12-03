@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chudasama Vivek</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: #000;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #000;
+            padding: 20px 0;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #c69a5d;
+        }
+
+        .logo-text {
+            color: #c69a5d;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            padding-left: 5%;
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            width: 50%;
+            font-size: 18px;
+        }
+
+        .gold-btn {
+            background: #c69a5d;
+            padding: 10px 25px;
+            border: none;
+            font-weight: 600;
+        }
+
+        /* ABOUT SECTION */
+        .about-title {
+            text-align: center;
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .about-title span {
+            color: #c69a5d;
+        }
+
+        .about-box {
+            background: #111;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .about-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Contact ****** */  
+
+
+
+
+        .contact-section {
+    background: #000;
+}
+
+.contact-title {
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.contact-title span {
+    color: #d3ab77;
+}
+
+.contact-box {
+    background: #1a1a1a;
+    border-radius: 5px;
+}
+
+.icon {
+    background: #1a1a1a;
+    color: #d3ab77;
+    border: 1px solid #333;
+}
+
+.form-control {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #d3ab77;
+}
+
+.contact-btn {
+    width: 160px;
+    background: #d3ab77;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-size: 17px;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.contact-btn:hover {
+    background: #c09567;
+}
+  /* reveyu**** */
+
+
+
+  .review-section {
+    background: #000;
+    color: white;
+}
+
+.review-title {
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.review-title span {
+    color: #d3ab77;
+}
+
+.review-box {
+    background: #111;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.review-box:hover {
+    transform: translateY(-10px);
+    border-color: #d3ab77;
+}
+
+.quote {
+    font-size: 70px;
+    color: #d3ab77;
+    font-weight: bold;
+}
+
+.review-box .text {
+    margin: 20px 0;
+    line-height: 1.6;
+    opacity: .8;
+}
+
+.customer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 2px solid #d3ab77;
+}
+
+.customer h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.stars {
+    color: #d3ab77;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* menu**** */
+
+.menu-section {
+    background: #000;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.title span {
+    color: #d3ab77;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.menu-box {
+    background: #0e0e0e;
+    border: 1px solid #333;
+    padding: 30px;
+    text-align: center;
+    transition: .3s;
+}
+
+.menu-box.active,
+.menu-box:hover {
+    background: white;
+    border-color: #d3ab77;
+}
+
+.menu-box img {
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+.menu-box h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu-box.active h3,
+.menu-box:hover h3 {
+    color: #000;
+}
+
+.price {
+    margin: 15px 0;
+    color: #fff;
+    font-size: 22px;
+}
+
+.price span {
+    color: grey;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.menu-box.active .price,
+.menu-box.active span,
+.menu-box:hover .price,
+.menu-box:hover span {
+    color: #000;
+}
+
+.cart-btn {
+    background: #d3ab77;
+    border: none;
+    padding: 10px 25px;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .2s;
+}
+
+.cart-btn:hover {
+    transform: scale(1.05);
+}
+
+  /* product****** */
+
+.products {
+    background: #000;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.heading {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.heading span {
+    color: #d3a675;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.box {
+    border: 1px solid #333;
+    padding: 25px;
+    background: #0f0f0f;
+    position: relative;
+    transition: .3s;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+}
+
+.box .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.box .icons a {
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px 12px;
+    transition: .3s;
+}
+
+.box .icons a:hover {
+    background: #d3a675;
+    color: #000;
+}
+
+.box .image img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.box .content h3 {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.stars i {
+    color: gold;
+}
+
+.price {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo-text" href="#">Chudasama Vivek</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                </ul>
+
+                <div class="nav-icons d-flex gap-3">
+                    <i class="fa-solid fa-magnifying-glass fs-4"></i>
+                    <i class="fa-solid fa-cart-shopping fs-4"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero" style="background-image: url('img/banner.jpg'); margin-top:80px;">
+        <div>
+            <h1>FRESH COFFEE<br>IN THE MORNING</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis velit nesciunt odio.</p>
+            <button class="gold-btn">Get It Now</button>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container py-5">
+        <h2 class="about-title">ABOUT <span>US</span></h2>
+
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://imgs.search.brave.com/wx1_ao5FbWJAp6DIjkxW43vcM8Wtk7BxH5_WlyQ5en8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/c3RvY2tzbmFwLmlv/L2ltZy10aHVtYnMv/MjgwaC9lc3ByZXNz/by1jb2ZmZWVfRldK/VVFJTEdWRy5qcGc" class="about-img">
+            </div>
+
+            <div class="col-md-6">
+                <div class="about-box">
+                    <h3>What Makes Our Coffee Special?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatem consequuntur
+                        aspernatur natus sint iure commodi vero tempora autem.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta vel autem rerum iusto
+                        quia corporis explicabo sunt fugiat?</p>
+
+                    <button class="gold-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="products" id="products">
+
+    <h1 class="heading"> Latest <span>Products</span></h1>
+
+    <div class="box-container">
+
+        <!-- PRODUCT 1 -->
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="img/nicaragua.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Fresh Coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1500 <span>20.99</span></div>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="img/columbia.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Fresh Coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1500<span>20.99</span></div>
+            </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="img/peru.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Fresh Coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">1500 <span>20.99</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="review" class="review-section py-5">
+    <div class="container">
+
+        <h1 class="review-title text-center mb-5">
+            CUSTOMER'S <span>REVIEW</span>
+        </h1>
+
+        <div class="row g-4">
+
+            <!-- Review Card 1 -->
+            <div class="col-lg-4">
+                <div class="review-box p-4">
+                    <div class="quote">❝</div>
+
+                    <p class="text">
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        Sit Optio Perferendis Quam Quisquam Maiores Rem, Tenetur Vitae.
+                    </p>
+
+                    <div class="customer">
+                        <img src="https://i.ibb.co/mTtGk9T/p1.png" alt="">
+                        <h3>renish gajera</h3>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="col-lg-4">
+                <div class="review-box p-4">
+                    <div class="quote">❝</div>
+
+                    <p class="text">
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        Sit Optio Perferendis Quam Quisquam Maiores Rem, Tenetur Vitae.
+                    </p>
+
+                    <div class="customer">
+                        <img src="https://i.ibb.co/wYGRwNh/p2.png" alt="">
+                        <h3>haesh patel</h3>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="col-lg-4">
+                <div class="review-box p-4">
+                    <div class="quote">❝</div>
+
+                    <p class="text">
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        Sit Optio Perferendis Quam Quisquam Maiores Rem, Tenetur Vitae.
+                    </p>
+
+                    <div class="customer">
+                        <img src="https://i.ibb.co/nRCvwTv/p3.png" alt="">
+                        <h3>jainish</h3>
+                        <div class="stars">★★★★☆</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <section id="menu" class="menu-section">
+    <h1 class="title">OUR <span>MENU</span></h1>
+
+    <div class="menu-container">
+
+        <!-- Card 1 (White Hover Active Look) -->
+        <div class="menu-box active">
+            <img src="https://i.ibb.co/2g3jNx0/c1.png" alt="">
+            <h3>Tasy And Healty</h3>
+            <div class="price">1500 <span>200</span></div>
+            <button class="cart-btn">Add To Cart</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="menu-box">
+            <img src="https://i.ibb.co/87VNpN4/c2.png" alt="">
+            <h3>Tasy And Healty</h3>
+            <div class="price">1500 <span>300</span></div>
+            <button class="cart-btn">Add To Cart</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="menu-box">
+            <img src="https://i.ibb.co/8zLwNfF/c3.png" alt="">
+            <h3>Tasy And Healty</h3>
+            <div class="price">1500 <span>400</span></div>
+            <button class="cart-btn">Add To Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- CONTACT SECTION -->
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <h1 class="text-center mb-5 contact-title">CONTACT <span>US</span></h1>
+
+        <div class="row g-4">
+            
+            <!-- Left: Google Map -->
+            <div class="col-lg-6">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.653960826391!2d72.8424!3d19.1290!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63ee9987abcd%3A0xcedaa!2sJogeshwari%20West!5e0!3m2!1sen!2sin!4v1700000000000"
+                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="col-lg-6">
+                <div class="contact-box p-4">
+
+                    <h2 class="mb-4 text-white">GET IN TOUCH</h2>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text icon"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text icon"><i class="fa fa-envelope"></i></span>
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text icon"><i class="fa fa-phone"></i></span>
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+
+                    <button class="contact-btn">Contact Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
